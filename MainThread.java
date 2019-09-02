@@ -31,6 +31,8 @@ public class MainThread extends Thread{
         weatherAPI.getAPI();
         weather = weatherAPI.getWeather();
         strength = weatherAPI.getStrong();
+        //weather = 0;
+        //strength = 3;
         parent.println("WEATHER: "+weather);
         parent.println("STRENGTH: "+strength);
 

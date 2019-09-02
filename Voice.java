@@ -12,7 +12,7 @@ public class Voice {
   PApplet parent;
   Minim minim;  //Minim型変数であるminimの宣言
   AudioPlayer player;  //サウンドデータ格納用の変数
-  static String[] mp3_name = {"hello2.wav","haveaniceday.wav","gomi_canbin2.wav", "gomi_fire2.wav", "gomi_kogata2.wav", "gomi_nonfire2.wav", "gomi_plastic2.wav"};
+  static String[] mp3_name = {"hello2.wav","haveaniceday.wav","gomi_canbin2.wav", "gomi_fire2.wav", "gomi_nonfire2.wav", "gomi_plastic2.wav"};
   int status = 0;
   int gomi_number = 0;
   
@@ -20,7 +20,7 @@ public class Voice {
     parent = p;
     this.minim = new Minim(p);  //初期化
     this.player = this.minim.loadFile(mp3_name[0]);
-    gomi_number = (int)parent.random(0,5);
+    gomi_number = (int)parent.random(0,4);
   }
   
   private void select_play(int index){

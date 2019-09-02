@@ -24,7 +24,8 @@ class Drops{
   public void draw() {
     parent.background(0);
     
-    if(parent.frameCount % 16*strength == 0){
+    if(parent.frameCount % 48
+    /strength == 0){
       drops.add(new Drop(parent));
     }
     

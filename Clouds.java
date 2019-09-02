@@ -24,7 +24,7 @@ class Clouds{
   public void draw() {
     parent.background(0);
     
-    if(parent.frameCount % 15*strength == 0){
+    if(parent.frameCount % 48/strength == 0){
       clouds.add(new Cloud(parent));
     }
     

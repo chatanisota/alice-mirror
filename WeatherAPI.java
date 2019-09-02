@@ -170,7 +170,7 @@ public class WeatherAPI{
     URL url;
     
     try {     
-      String requestURL = "http://api.openweathermap.org/data/2.5/forecast?q=Osaka-shi,jp&mode=json&appid=a43466d208700403739dc72d4886c0f4";
+      String requestURL = "http://api.openweathermap.org/data/2.5/forecast?q=Osaka-shi,jp&mode=json&cnt=3&appid=a43466d208700403739dc72d4886c0f4";
       url = new URL(requestURL);
       InputStream is = url.openConnection().getInputStream();
   
@@ -180,7 +180,7 @@ public class WeatherAPI{
       while (null != (line = reader.readLine())) {
           JSONObject jsonAll = parent.loadJSONObject(requestURL);
           JSONArray listArray = jsonAll.getJSONArray("list");
-          JSONObject obj = listArray.getJSONObject(0);
+          JSONObject obj = listArray.getJSONObject(2);
           String cityName = obj.getString("name");
           JSONObject mainObj = obj.getJSONObject("main"); //<>//
           int humidity = mainObj.getInt("humidity");

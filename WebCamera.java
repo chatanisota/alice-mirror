@@ -7,7 +7,7 @@ import java.awt.Rectangle;
 public class WebCamera {
   
   //Please check and select a number of connected camera by printCameraList() 18:WebCamera
-  private static final int CAMERA_NUMBER = 18;
+  private static final int CAMERA_NUMBER = 1;
   private static final int WIDTH = 1280;
   private static final int HEIGHT = 720;
   
